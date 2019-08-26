@@ -1,0 +1,63 @@
+.mtct {
+    width: 100%;
+    position: absolute;
+    top: 56px;
+}
+
+.cvr {
+    background: #ffe7ff03;
+    height: 238px;
+    width: 100%;
+}
+
+.mtnimg {
+    width: 190px;
+    height: 190px;
+    background: #0dea9a;
+    margin-top: 118px;
+    position: absolute;
+    left: 225px;
+    background-image: url(../assets/mentor_icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mtdtls {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 137px;
+    position: absolute;
+    left: 457px;
+}
+
+.mtnme {
+    font-size: 31px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.mtnsrt {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.mtnabtns {
+    position: absolute;
+    width: fit-content;
+    right: 330px;
+    margin-top: -56px;
+}
+
+button.btn.jjkk {
+    background: #07ffa5;
+    border-radius: 10px;
+}
+
+button.btn.jjkk.LDMF {
+    background: red;
+    color: #fff;
+}
+
+button.btn.jjkk.LDMF:hover {
+    color: black;
+}

@@ -1,0 +1,56 @@
+.reqys {
+    position: absolute;
+    top: 57px;
+    width: 100%;
+}
+
+.ksada {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 14px;
+}
+
+ul.sjvad {
+    list-style: none;
+}
+
+li.vajd {
+    background: white;
+    width: 617px;
+    margin-left: -24px;
+    padding: 13px;
+    margin-top: 15px;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #7d7c7c;
+}
+
+button.btn.mklsa {
+    width: 102px;
+}
+
+.osprw {
+    margin-left: 390px;
+}
+
+.lsjfaf {
+    margin-top: 6px;
+    font-size: 24px;
+    position: absolute;
+    font-family: sans-serif;
+    margin-left: 32px;
+}
+
+button.btn.mklsa.sdjks {
+    background: #13ff00;
+}
+
+button.btn.mklsa.ska {
+    background-color: red;
+    color: #fff;
+}
+
+button.btn.mklsa.ska:hover {
+    color: black;
+}

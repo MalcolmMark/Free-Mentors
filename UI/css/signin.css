@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+.cratacc {
+    background: white;
+    padding: 12px;
+    width: 236px;
+    position: fixed;
+    left: 50%;
+    top: 17%;
+    margin-left: -134px;
+    box-shadow: 0 0 6px #b3a7a7;
+    border-radius: 5px;
+}
+
+input.inpt {
+    width: 191px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+select {
+    width: 234px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+}
+input {
+    outline: none;
+}
+
+input.btn {
+    background: #1ee0d0;
+    margin: 8px 0;
+    display: inline-block;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.appnav {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.logohfg {
+    font-size: 32px;
+    margin-top: 44px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+button.btn.klsd {
+    margin-top: 14px;
+    background: aquamarine;
+}
