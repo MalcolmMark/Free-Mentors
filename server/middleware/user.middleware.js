@@ -4,8 +4,8 @@ import bcrypt from "bcrypt";
 export const isEmailUsed = (req, res, next) => {
     const user = users.find(user => user.email == req.body.email);
     if (user) {
-        return res.status(401).send({
-            'status': 401,
+        return res.status(409).send({
+            'status': 409,
             'message': 'Email already exists',
             'data': user.email
         });

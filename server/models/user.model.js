@@ -1,5 +1,8 @@
- export class User {
-    constructor(email, first_name, last_name, password, address, bio, occupation, expertise, role = "user"){
+import uuid from "uuid";
+
+export class User {
+    constructor(email, first_name, last_name, password, address, bio, occupation, expertise, role = "mentee") {
+        this.userId = uuid();
         this.email = email;
         this.first_name = first_name;
         this.last_name = last_name;

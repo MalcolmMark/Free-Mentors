@@ -14,7 +14,7 @@ export const validate = (req, res, next) => {
         // Validate req.body using the schema and validation options
         return Joi.validate(req.body, schema, (error, data) => {
             if (error) {
-                return res.status(404).send({'status' : 404,'error' : error.details[0].message});
+                return res.status(400).send({'status' : 400,'error' : error.details[0].message});
             } else {
                 // Replace req.body with the data after Joi validation
                 req.body = data;
@@ -22,5 +22,4 @@ export const validate = (req, res, next) => {
             }
         });
     }
-    next();
 };

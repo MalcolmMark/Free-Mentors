@@ -1,5 +1,5 @@
 # Free-Mentors
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage Status](https://coveralls.io/repos/github/MalcolmMark/Free-Mentors/badge.svg?branch=develop)](https://coveralls.io/github/MalcolmMark/Free-Mentors?branch=develop) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Project Description
 Free Mentors is a social initiative where accomplished professionals become role models to young people to provide free mentor-ship sessions.
