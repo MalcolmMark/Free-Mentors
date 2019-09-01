@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import { users } from "../db/data";
 
 export function verifyToken (req, res, next) {
     const token = req.header('token');
@@ -10,9 +11,12 @@ export function verifyToken (req, res, next) {
 
     try {
         const verified = jwt.verify(token, process.env.KEY); // Verify provided user token if is still loged in
+        const user = users.find(u => u.email == verified.email);
         req.user = {
-            'token': verified,
-            'email': verified.email
+            token: verified,
+            email: verified.email,
+            role: user.role,
+            id: user.id
         }; // Store user token and role for leter uses
         
         next(); // Let continue

@@ -55,4 +55,10 @@ describe('Users: ', () => {
             throw error;
         });
     });
+
+    it('should return status code 200 when user is changed to mentor', () => {
+        chai.request(app).patch('/api/v1/user/1').send().then((res) => {
+            chai.expect(res.status).to.eq(200);
+        });
+    });
 });

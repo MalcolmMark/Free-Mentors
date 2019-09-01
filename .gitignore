@@ -5,6 +5,9 @@ bin-release/
 [Bb]in/
 node_modules/
 package-lock.json
+.nyc_output
+coverage/
+
 
 # Other files and folders
 .settings/

@@ -18,6 +18,6 @@ const signinSchema = {
 
 // export the schema
 export default {
-    '/signup': signupSchema,
-    '/signin': signinSchema
+    '/auth/signup': signupSchema,
+    '/auth/signin': signinSchema
 };

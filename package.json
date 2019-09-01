@@ -5,7 +5,7 @@
   "main": "./server/app.js",
   "scripts": {
     "dev": "nodemon --exec babel-node ./server/server.js",
-    "start": "babel-node ./server/server.js",
+    "start": "babel-node  ./server/server.js",
     "build": "babel server --out-dir server/build",
     "test": "nyc --reporter=text --reporter=html mocha ./server/tests/**.spec.js --require @babel/polyfill --require @babel/register",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
@@ -15,12 +15,12 @@
   "keywords": [
     "node, API, javascript"
   ],
-  "author": "",
+  "author": "Malcolm Mark Okabo",
   "license": "ISC",
   "bugs": {},
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
