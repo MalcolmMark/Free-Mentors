@@ -56,4 +56,21 @@ export const updateUserToMentor = (req, res) => {
         });
     }
 };
+
+export const getAllMentors = (req, res) => {
+    const mentors = users.filter(u => u.role == "mentor");
+    return res.status(200).send({
+        "status": 200,
+        "data": mentors,
+    });
+}
+
+export const getMentorById = (req, res) => {
+    const mentor = users.find(u => u.userId == req.paramas.mentorId);
+    return res.status(200).send({
+        "status": 200,
+        "data": mentor,
+    });
+}
+
 export default { signin, signup }

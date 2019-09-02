@@ -16,7 +16,7 @@ export function verifyToken (req, res, next) {
             token: verified,
             email: verified.email,
             role: user.role,
-            id: user.id
+            userid: user.id
         }; // Store user token and role for leter uses
         
         next(); // Let continue

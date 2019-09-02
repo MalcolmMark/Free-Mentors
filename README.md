@@ -22,6 +22,32 @@ Free Mentors is a social initiative where accomplished professionals become role
 - [Users can review a mentor after a mentorship session]()
 - [Admin can delete a review deemed as inappropriate]()
 
+## Lanugauges Used
+- HTML 5
+- CSS 3
+- JavaSCript ES6
+
+## Installation
+Clone this repo from GitHub 
+
+- cd into Free Mentors
+
+- Run the index.html file that you will find immediately after opening the project
+
+## API reference
+The app is still in version 1 but per now it is yet to be hosted with Heroku
+
+## Tests
+These will be available in the next version of my app
+
+## Credits
+My sincere appreciations to Andela for the resources sent through email because they have expanded my knowledge and because of Andela i am able to build a UI from scratch.
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   
+
+© Malcolm Mark Okabo
+
 ## Author
 Malcolm Mark Okabo
 

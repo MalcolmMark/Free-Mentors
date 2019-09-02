@@ -12,6 +12,8 @@ body{
     height: 42px;
     cursor: pointer;
     font-weight: 900;
+    /*margin-left: 45%;
+    margin-top: 32%;*/
     }
 input {
     outline: none;

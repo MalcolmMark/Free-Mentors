@@ -55,3 +55,18 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
+.btn {
+    width: 233px;
+    background: #b3b1b1f7;
+    display: inline-block;
+    border-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 42px;
+    cursor: pointer;
+    font-weight: 900;
+    margin-left: 45%;
+    margin-top: 32%;
+}
