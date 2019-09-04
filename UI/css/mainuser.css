@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.logo{
+    font-family: Showcard Gothic;
+    background: black;
+    color: #fff;
+    font-size: 37px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+}
+
+label {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.btn {
+    background-color: #000000;
+    border: 1px solid black;
+    width: 330px;
+    height: 45px;
+    border-radius: 1px;
+    margin-top: 29px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Century Gothic;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}

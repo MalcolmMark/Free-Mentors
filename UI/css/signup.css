@@ -5,9 +5,9 @@ body {
 .cratacc {
     background: white;
     padding: 12px;
-    width: 236px;
+    width: 338px;
     position: fixed;
-    left: 50%;
+    left: 43%;
     top: 17%;
     margin-left: -134px;
     box-shadow: 0 0 6px #b3a7a7;
@@ -15,7 +15,7 @@ body {
 }
 
 input.inpt {
-    width: 191px;
+    width: 295px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -24,7 +24,7 @@ input.inpt {
 }
 
 select {
-    width: 234px;
+    width: 335px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -40,9 +40,9 @@ input.btn {
     margin: 8px 0;
     display: inline-block;
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 29px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .appnav {
@@ -57,5 +57,22 @@ input.btn {
     font-size: 32px;
     margin-top: 44px;
     font-family: sans-serif;
+    font-weight: 500;
+}
+
+.hder {
+    color: #fff;
+    width: 100%;
+    height: 58px;
+    position: fixed;
+    box-shadow: 0 0 7px #a7a7a7;
+    background: #fff
+}
+
+.logox {
+    color: #080808;
+    font-size: 28px;
     font-weight: 900;
+    margin-left: 25px;
+    margin-top: 9px;
 }
