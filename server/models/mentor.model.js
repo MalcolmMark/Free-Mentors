@@ -1,6 +1,7 @@
-export class User {
+
+export class Mentor {
     constructor(userId, email, first_name, last_name, password, address, bio, occupation, expertise, role = "mentee") {
-        this.userId = userId;
+        this.mentorId = mentorId;
         this.email = email;
         this.first_name = first_name;
         this.last_name = last_name;
