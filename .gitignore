@@ -5,6 +5,9 @@ bin-release/
 [Bb]in/
 node_modules/
 package-lock.json
+.nyc_output
+coverage/
+
 
 # Other files and folders
 .settings/
@@ -18,3 +21,7 @@ package-lock.json
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+node_modules
+.env
+coverage.Icov
+.nyc_output

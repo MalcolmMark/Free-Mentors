@@ -1,8 +1,9 @@
 body{
     margin: 0;
+    background-image: url("../assets/background_wallpaper.jpg")
 }
 .btn {
-    width: 233px;
+    width: 330px;
     background: #b3b1b1f7;
     display: inline-block;
     border-color: transparent;

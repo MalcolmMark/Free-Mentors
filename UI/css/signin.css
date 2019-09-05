@@ -5,17 +5,17 @@ body {
 .cratacc {
     background: white;
     padding: 12px;
-    width: 236px;
+    width: 331px;
     position: fixed;
     left: 50%;
-    top: 17%;
+    top: 41%;
     margin-left: -134px;
     box-shadow: 0 0 6px #b3a7a7;
     border-radius: 5px;
 }
 
 input.inpt {
-    width: 191px;
+    width: 286px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;

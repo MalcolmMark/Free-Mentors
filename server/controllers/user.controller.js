@@ -4,31 +4,59 @@ import { genToken } from "../helpers/token.helper";
 
 const signin = (req, res) => {
     const token = genToken(req.body.email);
-    
+
     return res.status(200).send({
         "status": 200,
         "message": "User is successfully logged in",
         "data": {
-            "token" : token,
+            "token": token,
         }
     });
 };
 
 const signup = (req, res) => {
-    const user = new User(req.body.email, req.body.first_name, req.body.last_name, req.body.password, req.body.address, req.body.bio, req.body.occupation, req.body.expertise );
-    
+    const user = new User(users.length + 1, req.body.email, req.body.first_name, req.body.last_name, req.body.password, req.body.address, req.body.bio, req.body.occupation, req.body.expertise);
+
     users.push(user);
 
     const token = genToken(user.email);
 
     return res.status(201).send({
-        "status" : 201,
+        "status": 201,
         "message": "User created successfully",
-        "data" : {
-            "token" : token,
+        "data": {
+            "token": token,
             "message": "User created successfully",
         }
     });
 };
 
-export default { signin, signup }
+export const updateUserToMentor = (req, res) => {
+
+    if (req.user.role === "admin") {
+        const index = users.findIndex(u => u.userId.toString() === req.params.userId);
+
+        if (index > -1) {
+            users[index].role = "mentor";
+
+            return res.status(200).send({
+                "status": 200,
+                "message": "User account changed to mentor.",
+            });
+        }
+
+        return res.status(404).send({
+            "status": 404,
+            "message": "No record found.",
+        });
+    } else {
+        return res.status(403).send({
+            "status": 403,
+            "message": "You are not authorized to perform this action only admin is allowed to access it",
+        });
+    }
+};
+
+
+
+export default { signin, signup, updateUserToMentor }

@@ -1,5 +1,5 @@
 import { users } from "../db/data";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export const isEmailUsed = (req, res, next) => {
     const user = users.find(user => user.email == req.body.email);
@@ -32,3 +32,4 @@ export  const authanticate = async (req, res, next) => {
         });
     }
 }
+
