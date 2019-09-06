@@ -1,8 +1,9 @@
 import { User } from "../models/user.model";
-import { Session } from "../models/session.model";
-import { Review } from "../models/review.model";
-import { users, sessions, reviews } from "../db/data";
+
+import { users, sessions } from "../db/data";
+
 import { genToken } from "../helpers/token.helper";
+import  Session from "../models/session.model";
 
 export const signin = (req, res) => {
     const token = genToken(req.body.email);
@@ -68,12 +69,26 @@ export const getAllMentors = (req, res) => {
 }
 
 export const getMentorById = (req, res) => {
-    const mentor = users.find(u => u.userId == req.paramas.mentorId);
+
+    const mentor = users.find(u => u.userId == req.params.mentorId);
+
     return res.status(200).send({
         "status": 200,
         "data": mentor,
     });
 }
+
+
+export const createSession = (req, res) => {
+    const session = new Session(sessions.length+1, req.body.mentorId, req.user.userId, req.body.questions, req.user.email);
+    sessions.push(session);
+
+    return res.status(200).send({
+        "status": 200,
+        "data": session
+    });
+}
+
 
 export const createSession = (req, res) => {
     const session = new Session(sessions.length + 1, req.body.mentorId, req.user.userId, req.body.questions, req.user.email);
@@ -149,4 +164,5 @@ export const deleteSession = (req, res) => {
     });
 }
 
-export default { signin, signup, updateUserToMentor, getAllMentors, getMentorById, createSession, rejectSession, reviewSession, deleteSession  }
+export default { signin, signup, updateUserToMentor, getAllMentors, getMentorById, createSession }
+

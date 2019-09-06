@@ -1,7 +1,8 @@
 
 import { User } from "../models/user.model";
-import { Session } from "../models/session.model";
-import { Review } from "../models/review.model";
+
+import { Session } from "inspector";
+
 /* User Data */
 
 export let users = [///ksjkfjjf
@@ -17,6 +18,9 @@ export let sessions = [
 export let reviews = [
     new Review(1, 2, 2, 1, "Kako baba", "remarks...")
 ];
-=======
 
 
+
+export const sessions = [
+    new Session(1, 2, 3, 'Would you be my mentor', 'malcolmmarkokabo@gmail.com'),
+]

@@ -32,4 +32,3 @@ export  const authanticate = async (req, res, next) => {
         });
     }
 }
-

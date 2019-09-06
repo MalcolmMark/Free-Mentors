@@ -35,7 +35,9 @@ Clone this repo from GitHub
 - Run the index.html file that you will find immediately after opening the project
 
 ## API reference
-The app is still in version 1 but per now it is yet to be hosted with Heroku
+The app is in Version 1 and it is Hosted on Heroku
+
+
 
 ## Tests
 These will be available in the next version of my app
