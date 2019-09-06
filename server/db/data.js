@@ -1,16 +1,22 @@
-import User from "../models/user.model";
-import Session from "../models/session";
-import Review from "../models/review";
 
-export const users = [ // tesisharon
-  new User(1, "sharonuase@freementors.com", "Mutesi", "Sharon", "$2b$10$P49isirNhB9zp3zAt/v1O.lP9G4ygW9ri9xx8YyD9Q3QDCdMqyxMm",
-    "Kigali", "this is me", "developer", "software dev", "admin"),
+import { User } from "../models/user.model";
+import { Session } from "../models/session.model";
+import { Review } from "../models/review.model";
+/* User Data */
+
+export let users = [///ksjkfjjf
+    new User(1,'malcolm@gmail.com','Malcolm','Mark','$2b$10$2XrxxSH6jjbi6T33hOn/k.Sb3OYGLWO0unI5aYKjs3Tuauo1dnOTq','Kigali','I am a dev','Developer','swift','Admin'),
+];  // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbGNvbG1AZ21haWwuY29tIiwiaWF0IjoxNTY3MzA3NzE5fQ.M3l_ClQYFpk4qq2ZTXj4Yv1jkh8L6mcmp3sOxYGyvk4
+
+/*  */
+export let sessions = [
+    new Session(1, 2, 3,'Koko Ange angeko@gmail.com ksjkfjjf', "angeko@gmail.com")
 ];
 
-export const sessions = [
-  new Session(1, 3, 4, "how soon can i start with the sessions?", "sharonuase@gmail.com", "is pending..."),
+/*  */
+export let reviews = [
+    new Review(1, 2, 2, 1, "Kako baba", "remarks...")
 ];
+=======
 
-export const reviews = [
-  new Review(1, 1, 3, 1, 4, "sharon k", "very good"),
-];
+
