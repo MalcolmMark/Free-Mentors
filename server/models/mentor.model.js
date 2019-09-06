@@ -1,4 +1,3 @@
-
 export class Mentor {
     constructor(userId, email, first_name, last_name, password, address, bio, occupation, expertise, role = "mentee") {
         this.mentorId = mentorId;
