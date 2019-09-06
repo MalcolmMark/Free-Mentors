@@ -11,9 +11,7 @@ router.post('/auth/signin', validate, authanticate, userController.signin);
 
 router.post('/auth/signup', validate, isEmailUsed, hashPassword, userController.signup);
 
-router.patch('/user/:userId', verifyToken, userController.updateUserToMentor);
-
-router.get('/mentors', verifyToken, userController.getAllMentors);
+router.patch('/user/:userId', verifyToken, updateUserToMentor);
 
 
 export default router;
