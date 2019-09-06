@@ -18,5 +18,8 @@ router.get('/mentors', verifyToken, userController.getAllMentors);
 
 router.get('/mentors/:mentorId', verifyToken, userController.getMentorById);
 
+router.post('/sessions', verifyToken, userController.createSession);
+
+router.post('/sessions/:sessionId/accept', verifyToken, userController.acceptSession)
 
 export default router;
