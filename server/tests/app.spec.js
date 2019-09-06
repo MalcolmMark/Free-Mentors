@@ -173,10 +173,13 @@ it('should return status code 200 when user is changed to mentor', (done) => {
     chai.request(app).patch(`/api/v1/user/${3}`).send()
         .set('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ2Vrb0BnbWFpbC5jb20iLCJpYXQiOjE1NjczNjczMjd9.hH3utDCmPjVZVAcPlflTmfb-u9h82hIrQS_dcGEjd6Q')
         .end((err, res) => {
+            console.log(res);
+            
             res.should.have.status(200);
             done();
         });
 });
+
 it('should return status 404 if no record found', (done) => {
     chai.request(app).patch('/api/v1/user/:userId').send()
     .set('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ2Vrb0BnbWFpbC5jb20iLCJpYXQiOjE1NjczNjczMjd9.hH3utDCmPjVZVAcPlflTmfb-u9h82hIrQS_dcGEjd6Q')
