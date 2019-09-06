@@ -1,12 +1,16 @@
-import { User } from "../models/user.model";
-/* User Data */
+import User from "../models/user.model";
+import Session from "../models/session";
+import Review from "../models/review";
 
-export let users = [
-    new User(1, 'angeko@gmail.com', 'Koko', 'Ange', '$2a$10$Skf6psO9yOsoG/FMZ2gAzeoFkAyRTM/G3Y8pMnQ9.NHx21YeIttxO', 'Miduha', 'I am ...', 'Developer', 'Swift', 'admin'),
-    new User(2, 'moise@gmail.com', 'Koko', 'Ange', '$2a$10$Skf6psO9yOsoG/FMZ2gAzeoFkAyRTM/G3Y8pMnQ9.NHx21YeIttxO', 'Miduha', 'I am ...', 'Developer', 'Swift', 'mentee'),
-    new User(3, 'ezra@gmail.com', 'Koko', 'Ange', '$2a$10$Skf6psO9yOsoG/FMZ2gAzeoFkAyRTM/G3Y8pMnQ9.NHx21YeIttxO', 'Miduha', 'I am ...', 'Developer', 'Swift', 'mentee'),
-    new User(4, '@gmail.com', 'Koko', 'Ange', '$2a$10$Skf6psO9yOsoG/FMZ2gAzeoFkAyRTM/G3Y8pMnQ9.NHx21YeIttxO', 'Miduha', 'I am ...', 'Developer', 'Swift', 'mentee'),
+export const users = [ // tesisharon
+  new User(1, "sharonuase@freementors.com", "Mutesi", "Sharon", "$2b$10$P49isirNhB9zp3zAt/v1O.lP9G4ygW9ri9xx8YyD9Q3QDCdMqyxMm",
+    "Kigali", "this is me", "developer", "software dev", "admin"),
 ];
 
-/* eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ2Vrb0BnbWFpbC5jb20iLCJpYXQiOjE1NjczNjczMjd9.hH3utDCmPjVZVAcPlflTmfb-u9h82hIrQS_dcGEjd6Q */
+export const sessions = [
+  new Session(1, 3, 4, "how soon can i start with the sessions?", "sharonuase@gmail.com", "is pending..."),
+];
 
+export const reviews = [
+  new Review(1, 1, 3, 1, 4, "sharon k", "very good"),
+];
